@@ -1,0 +1,244 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    max-inline-size: 100%;
+    max-block-size: 100%;
+}
+
+/* ============ cSS Reset ============ */
+
+div.sd img {
+    width: 12rem;
+    height: 12rem;
+    object-fit: cover;
+    border-radius: 0 2rem 0 2rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5fbf9ff;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;;
+}
+
+nav li {
+    list-style: none;
+    display: inline;
+    padding: 0.1rem 1rem;
+}
+
+nav ul {
+    margin-right: 1.2rem;
+}
+
+nav h1 {
+    margin-left: 1.2rem;
+}
+
+ol {
+    margin: 0;
+    padding-left: 1rem;
+}
+p {
+    margin: 0;
+}
+
+main div.sd-text h1, h2 {
+    margin: 0;
+}
+
+div.sd {
+    display: flex;
+    padding: 2rem 1rem 2rem;
+    align-items: center;
+    min-height: 50vh;
+    justify-content: space-around;
+}
+
+div.flexright{
+flex-direction: row-reverse;
+background-color: #e1f9ecff;
+}
+
+div.sd-text {
+    margin: 0;
+    padding: 0.3rem 2rem;  
+    max-width: 30rem; 
+}
+
+@media screen and (min-width: 479px) and (max-width: 767px) {
+  /* Your mobile-specific styles here */
+div.sd {
+    flex-direction: column;
+}
+
+div.sd img {
+    width: 10rem;
+    height: 10rem;
+}
+
+
+div.flexright .sd-img::before {
+    content: "";
+    border: dashed #41a97bff;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-20%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexright .sd-img::after {
+    content: "";
+    background-color: #41a97bff;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: absolute;
+    transform: translate(40%,-80%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexleft .sd-img::before {
+    content: "";
+    border: dashed #41a97bff;
+    border-radius: 0 2rem 0 2rem;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,40%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexleft .sd-img::after {
+    content: "";
+    background-color: #41a97bff;
+    border-radius: 0 2rem 0 2rem;
+    width: 8rem;
+    height: 8rem;
+    display: block;
+    position: absolute;
+    transform: translate(40%,-150%);
+    overflow: visible;
+    z-index: 0;
+}
+}
+
+
+@media screen and (max-width: 479px) {
+    /* Your mobile-specific styles here */
+div.sd {
+    flex-direction: column;
+}
+
+    div.sd img {
+    width: 8rem;
+    height: 8rem;
+}
+
+
+div.flexright .sd-img::before {
+    content: "";
+    border: dashed #41a97bff;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-20%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexright .sd-img::after {
+    content: "";
+    background-color: #41a97bff;
+    width: 7rem;
+    height: 7rem;
+    display: block;
+    position: absolute;
+    transform: translate(40%,-80%);
+    overflow: visible;
+    z-index: 0;
+}
+}
+
+div.sd {
+    position: relative;
+}
+
+img {
+    position: relative;
+    z-index: 100;
+
+}
+@media screen and (min-width: 767px) { 
+div.flexright .sd-img::before {
+    content: "";
+    border: dashed #41a97bff;
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,-20%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexright .sd-img::after {
+    content: "";
+    background-color: #41a97bff;
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    position: absolute;
+    transform: translate(40%,-80%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexleft .sd-img::before {
+    content: "";
+    border: dashed #41a97bff;
+    border-radius: 0 2rem 0 2rem;
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    position: absolute;
+    transform: translate(-20%,40%);
+    overflow: visible;
+    z-index: 0;
+}
+
+div.flexleft .sd-img::after {
+    content: "";
+    background-color: #41a97bff;
+    border-radius: 0 2rem 0 2rem;
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    position: absolute;
+    transform: translate(40%,-150%);
+    overflow: visible;
+    z-index: 0;
+}
+}
